@@ -29,9 +29,20 @@ public class ServicioEstudiantes {
 		}
 		 
 	 
-	 public void eliminar(String cedula) {
+	 public boolean eliminar(String cedula) {
+		 Estudiante estudiante = buscarPorCedula(cedula);
+			if (estudiante !=null) {
+				estudiantes.remove(estudiante);
+				return true;
+				
+			}else {
+				return false;
+			}
 
-	 }
+			
+		}
+
+	 
 	 public void actualizar(String cedula, Estudiante nuevo) {
 	 }
 	 public ArrayList<Estudiante> listar() {
