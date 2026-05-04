@@ -52,6 +52,15 @@ public class Asistencia {
 	}
 	
 	
+	// sobreescribimos el toString
+
+	@Override
+	public String toString() {
+		return "Asistencia [fechaClase=" + fechaClase + ", fechaHoraRegistro=" + fechaHoraRegistro + ", estado="
+				+ estado + "]";
+	}
+	
+	
 	
 	
 	

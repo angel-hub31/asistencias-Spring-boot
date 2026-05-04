@@ -29,6 +29,15 @@ public class RegistroAsistencia {
 	public void setAsistencia(Asistencia asistencia) {
 		this.asistencia = asistencia;
 	}
+
+	
+	// sobreescribimos el toString
+	@Override
+	public String toString() {
+		return "RegistroAsistencia [estudiante=" + estudiante + ", asistencia=" + asistencia + "]";
+	}
+	
+	
 	
 
 }
