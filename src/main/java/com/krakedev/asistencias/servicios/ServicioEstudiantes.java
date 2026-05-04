@@ -5,6 +5,7 @@ import java.util.ArrayList;
 import org.springframework.stereotype.Service;
 
 import com.krakedev.asistencias.entidades.Estudiante;
+import com.krakedev.clientes.entidades.Cliente;
 
 @Service
 public class ServicioEstudiantes {
@@ -19,7 +20,15 @@ public class ServicioEstudiantes {
 		 
 	 }
 	 public Estudiante buscarPorCedula(String cedula) {
-	 }
+		 for(Estudiante e: estudiantes) {
+				if(e.getCedula().equals(cedula)) {
+					return e;
+				}
+			}
+			return null;
+		}
+		 
+	 
 	 public void eliminar(String cedula) {
 
 	 }
