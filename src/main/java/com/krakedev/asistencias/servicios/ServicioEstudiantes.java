@@ -5,7 +5,6 @@ import java.util.ArrayList;
 import org.springframework.stereotype.Service;
 
 import com.krakedev.asistencias.entidades.Estudiante;
-import com.krakedev.clientes.entidades.Cliente;
 
 @Service
 public class ServicioEstudiantes {
@@ -58,6 +57,7 @@ public class ServicioEstudiantes {
 	 
 	 
 	 public ArrayList<Estudiante> listar() {
+		 return estudiantes;
 	 }
 
 	
