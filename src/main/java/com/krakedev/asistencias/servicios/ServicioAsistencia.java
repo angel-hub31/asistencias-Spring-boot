@@ -35,4 +35,15 @@ public class ServicioAsistencia {
 		return null;
 
 	}
+	public ArrayList<Asistencia> consultarAsistencia(String cedula){
+		ArrayList<Asistencia> asistenciaDelEstudiante = new ArrayList<>();
+		
+		for(RegistroAsistencia registro : registros) {
+			if(registro.getEstudiante().getCedula().equals(cedula)) {
+				asistenciaDelEstudiante.add(registro.getAsistencia());
+			}
+			
+		}
+		return asistenciaDelEstudiante;
+	}
 }
