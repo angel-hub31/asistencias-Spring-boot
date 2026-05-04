@@ -1,11 +1,13 @@
 package com.krakedev.asistencias.entidades;
 
 import java.time.LocalDate;
-import java.time.LocalTime;
+import java.time.LocalDateTime;
+
+
 
 public class Asistencia {
 	private LocalDate fechaClase;
-	private LocalTime fechaHoraRegistro;
+	private LocalDateTime fechaHoraRegistro;
 	private String estado;
 	
 	//constructor vacio
@@ -14,7 +16,7 @@ public class Asistencia {
 	}
 
 //constructor que recibe parametros
-	public Asistencia(LocalDate fechaClase, LocalTime fechaHoraRegistro, String estado) {
+	public Asistencia(LocalDate fechaClase, LocalDateTime fechaHoraRegistro, String estado) {
 		
 		this.fechaClase = fechaClase;
 		this.fechaHoraRegistro = fechaHoraRegistro;
@@ -32,12 +34,12 @@ public class Asistencia {
 	}
 
 
-	public LocalTime getFechaHoraRegistro() {
+	public LocalDateTime getFechaHoraRegistro() {
 		return fechaHoraRegistro;
 	}
 
 
-	public void setFechaHoraRegistro(LocalTime fechaHoraRegistro) {
+	public void setFechaHoraRegistro(LocalDateTime fechaHoraRegistro) {
 		this.fechaHoraRegistro = fechaHoraRegistro;
 	}
 
