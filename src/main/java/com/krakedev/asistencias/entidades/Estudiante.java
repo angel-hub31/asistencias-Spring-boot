@@ -7,7 +7,7 @@ public class Estudiante {
 	
 	//costructor vacio
 	public Estudiante() {
-		super();
+		
 	}
 
 //constructor que recibe parametro parametros
@@ -18,7 +18,7 @@ public class Estudiante {
 		this.apellido = apellido;
 	}
 
-
+	//metodos getters y setters
 	public String getCedula() {
 		return cedula;
 	}
