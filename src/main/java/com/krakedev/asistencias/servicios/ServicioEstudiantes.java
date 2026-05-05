@@ -11,12 +11,12 @@ public class ServicioEstudiantes {
 	
 	private ArrayList<Estudiante> estudiantes = new ArrayList<>();
 	//no permite duplicados
-	 public void agregar(Estudiante estudiante) {
+	 public Estudiante agregar(Estudiante estudiante) {
 		 Estudiante encontrado=buscarPorCedula(estudiante.getCedula());
 		 if(encontrado == null) {
 			 estudiantes.add(estudiante);
 		 }
-		 
+		 return null;
 	 }
 	 public Estudiante buscarPorCedula(String cedula) {
 		 for(Estudiante e: estudiantes) {
